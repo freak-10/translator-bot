@@ -8,7 +8,7 @@ class About(Cog):
 
     @command(name="about")
     async def tell_about(self, ctx):
-        embed = Embed(title="About the creator", description="freak#1531 is my creator's discord ID")
+        embed = Embed(title="About the creator", description="freak#1531 is my creator's discord ID", colour=0xFFC0CB, timestamp=datetime.utcnow())
         embed.set_image(url="https://i.imgur.com/ayhcIkj.gif")
         embed.add_field(name="Why I made the bot?", value="This bot was made as a project for my college's Hackoonamatata Hackathon. I have always been interested in discord bots and how I could make them. This was my first attempt at making a functional one.", inline=False)
         embed.add_field(name="How can I improve it?", value="I am using free versions of the APIs and there are limits to their usage. This makes the bot a bit worse than what it could be. How I would improve is try to make my own APIs to get rid of this issue. I will also try to add more commands in the future.", inline=False)
