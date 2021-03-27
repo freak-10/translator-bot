@@ -47,8 +47,6 @@ class Bot(BotBase):
     def run(self):
         print("Running Setup...")
         self.setup()
-        #with open("./lib/bot/token.0", "r", encoding="utf-8") as tf:
-        #    self.TOKEN = tf.read()
         self.TOKEN = os.environ['BOT_TOKEN']
         print("Running Bot...")
         super().run(self.TOKEN, reconnect=True)
