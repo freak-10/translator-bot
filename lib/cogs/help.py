@@ -20,14 +20,14 @@ class Help(Cog):
             embed.add_field(name="Get more info about each command", value="Use +help <command>", inline=False)
             await ctx.send(embed=embed)
         else:
-            if cmd == "translate":
+            if cmd == "translate" or cmd == "tr":
                 embed = Embed(title="+translate", description="Auto-detects input language (if available) and translates to all available languages", colour=0xFFC0CB, timestamp=datetime.utcnow())
                 embed.set_thumbnail(url="https://i.imgur.com/ayhcIkj.gif")
                 embed.add_field(name="Syntax", value="+translate <text>", inline=False)
                 embed.add_field(name="Aliases", value="+tr", inline=False)
                 embed.add_field(name="Cooldown", value="1 command every 1o secs for the whole server", inline=False)
                 await ctx.send(embed=embed)
-            elif cmd == "translateto":
+            elif cmd == "translateto" or cmd == "trto":
                 embed = Embed(title="+translateto", description="Auto-detects input language (if available) and translates to chosen language", colour=0xFFC0CB, timestamp=datetime.utcnow())
                 embed.set_thumbnail(url="https://i.imgur.com/ayhcIkj.gif")
                 embed.add_field(name="Syntax", value="+translateto <target-language> <text>", inline=False)
@@ -35,7 +35,7 @@ class Help(Cog):
                 embed.add_field(name="Aliases", value="+trto", inline=False)
                 embed.add_field(name="Cooldown", value="1 command every 5 seconds for the whole server", inline=False)
                 await ctx.send(embed=embed)
-            elif cmd == "spin":
+            elif cmd == "spin" or cmd == "sp":
                 embed = Embed(title="+spin", description="Performs text spinning on English input", colour=0xFFC0CB, timestamp=datetime.utcnow())
                 embed.set_thumbnail(url="https://i.imgur.com/ayhcIkj.gif")
                 embed.add_field(name="Syntax", value="+spin <text>", inline=False)
