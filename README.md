@@ -1,6 +1,6 @@
 # translator-bot
 ## Inspiration
-I have been using discord for a long time and have always been fascinated with the bots created by other people. I wanted to try creating one on my own and this hackathon gave me a chance to do just that.
+I have been using discord for a long time and have always been fascinated with the bots created by other people. I wanted to try creating one on my own and this hackathon gave me a chance to do just that. Also, as we have two foreign languages in our syllabus (french and german) this might come in handy.
 ## What it does
 As the name suggests, it is kind of like a translator tool that uses APIs to produce results in supported languages. It also has a command to perform "spinning" on the given text which replaces words with their synonyms to make it look original. Other than that, there are also some commands to convert your text into funny versions such as pirate talk, Shakespeare-like English, etc.
 ## How we built it
